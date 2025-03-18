@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
 
 
 app.use('/api/auth', authroutes);
-app.use('/api/auth', agentroutes);
-app.use('/api/auth', uploadroutes);
+app.use('/api/agent', agentroutes);
+app.use('/api/upload', uploadroutes);
 
 const PORT = process.env.PORT || 5000;
 
